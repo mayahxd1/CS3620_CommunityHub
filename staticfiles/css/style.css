@@ -1,0 +1,112 @@
+body {
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans font */
+    background-color: #f0f2f5; /* Light grey background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #ffffff; /* White background */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #dee2e6; /* Light grey border */
+}
+
+h1, h2 {
+    color: #343a40; /* Dark grey text */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #007bff; /* Dark blue underline */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.event-detail, .event-form-container, .event-list-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.event-detail h2, .event-form-container h2, .event-list-container h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #343a40; /* Dark grey text */
+}
+
+.event-detail p, .event-form-container p, .event-list-container p {
+    font-size: 1.25rem;
+    color: #6c757d; /* Grey text */
+}
+
+.event-detail .event-description,
+.event-detail .event-location,
+.event-detail .event-date-time,
+.event-form-container .form-group,
+.event-list-container .event-item {
+    font-size: 1.1rem;
+    color: #6c757d; /* Grey text */
+    margin-top: 0.5rem;
+}
+
+.back-link, .create-event-link, .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #007bff; /* Dark blue background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px; /* Rounded shape */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.back-link:hover, .create-event-link:hover, .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.event-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.event-list li {
+    padding: 20px;
+    margin: 15px 0;
+    background-color: #f8f9fa; /* Light grey background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.event-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-list li h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #007bff; /* Dark blue text */
+}
+
+a {
+    color: #007bff; /* Dark blue text */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
