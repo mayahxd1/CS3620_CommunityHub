@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="event-list-container">
+        <h2>Events Happening Near You</h2>
+        <ul class="event-list">
+            {% for event in events %}
+                <li class="event-item">
+                    <h3><a href="{% url 'event_detail' event.id %}">{{ event.title }}</a></h3>
+                </li>
+            {% endfor %}
+        </ul>
+        <a class="create-event-link" href="{% url 'event_create' %}">Create a New Event</a>
+    </div>
+{% endblock %}
